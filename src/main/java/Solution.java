@@ -2,7 +2,7 @@
 import java.util.*;
 
 class Solution {
-
+    // [Lv.1 프로그래머스] 개인정보 수집 유효기간
     public int[] solution(String today, String[] terms, String[] privacies) {
 
         List<Integer> anwser = new ArrayList<>();
@@ -22,7 +22,8 @@ class Solution {
                 anwser.add(i + 1);
             }
         }
-
+        // stream() -> 자바 8. 람다식으로 처리할 수 있게 처리
+        // mapToInt
         return anwser.stream().mapToInt(integer -> integer).toArray();
     }
 
