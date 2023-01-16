@@ -16,7 +16,7 @@ public class 크기가_작은_부분문자열 {
 
         int anwser = 0;
 
-        for(int i=0; i<t.length()-p.length();i++){
+        for(int i=0; i<=t.length()-p.length();i++){
             if(Long.parseLong(t.substring(i, i + p.length())) <= Long.parseLong(p)){
                 anwser++;
             }
