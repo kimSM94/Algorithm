@@ -1,3 +1,5 @@
+package old;
+
 public class 짝수의_합 {
     public int solution(int n) {
         int answer = 0;
