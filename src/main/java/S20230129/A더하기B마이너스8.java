@@ -3,10 +3,10 @@ package S20230129;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class A더하기B마이너스7 {
+public class A더하기B마이너스8 {
 
-    /*
-    * https://www.acmicpc.net/problem/11021
+    /* 이제해야함
+    * https://www.acmicpc.net/problem/11022
     * */
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
