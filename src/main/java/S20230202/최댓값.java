@@ -1,6 +1,7 @@
 package S20230202;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 class 최댓값 {
@@ -32,13 +33,26 @@ class 최댓값 {
             }
 
 
-        }
 
+        }
         int finalMax = max;
         int index2 = IntStream.range(0, arr.length)
-                .filter(i -> finalMax == arr[i]).findFirst().orElse(-1);
-
+                     .filter(i -> finalMax == arr[i])
+                     .findFirst().orElse(-1);
         System.out.println(max+"\n"+(index2+1));
+
+        //최대값
+        int max2 =Arrays.stream(arr).max().getAsInt();
+        int[] indexArr = IntStream.range(0, arr.length)
+                        .filter(i -> arr[i] == max2)
+                        .toArray();
+        System.out.println("두 번째 값 출력");
+        System.out.println(max2 + "\n" + (indexArr[0]+1));
+
+        // INDEX
+
+
+
 
 
     }
