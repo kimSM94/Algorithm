@@ -49,12 +49,6 @@ class 최댓값 {
         System.out.println("두 번째 값 출력");
         System.out.println(max2 + "\n" + (indexArr[0]+1));
 
-        // INDEX
-
-
-
-
-
     }
 
 }
