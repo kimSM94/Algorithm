@@ -3,7 +3,6 @@ package S20230205;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 
 public class 한수 {
     public static void main(String[] args) throws IOException {
