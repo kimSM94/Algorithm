@@ -7,6 +7,11 @@ import java.io.InputStreamReader;
 public class 문자열반복 {
 
     public static void main(String[] args) throws IOException {
+
+        /*
+        * 서버 : https://www.acmicpc.net/problem/2675
+        * */
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
 
