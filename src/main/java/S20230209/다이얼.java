@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 
 public class 다이얼 {
 
+    /*
+    * URL : https://www.acmicpc.net/problem/5622
+    * */
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
