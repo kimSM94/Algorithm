@@ -15,19 +15,28 @@ public class 크로아티아_알파벳 {
 
         char[] arr = new char[alphabet.length()];
         int count = 0;
+
         for (int i = 0; i < arr.length; i++) {
             arr[i] =alphabet.charAt(i);
             count++;
-            System.out.println("count = "+count);
+
+            if (arr[i] == '=') {
+                count--;
+            }
         }
 
         for (int i = 0; i < arr.length - 1; i++) {
-            System.out.println("test ="+String.valueOf(arr[i] + arr[i + 1]));
-            if (String.valueOf(arr[i] + arr[i + 1]) == "lj" || String.valueOf(arr[i] + arr[i + 1]) == "nj" || String.valueOf(arr[i] + arr[i + 1]) == "dz" ) {
+
+            if (String.valueOf(arr[i]+""+arr[i+1]).equals(String.valueOf("l"+"j"))){
                 count--;
-            } else if (arr[i] == '=') {
+            }else if( String.valueOf(arr[i]+""+arr[i+1]).equals(String.valueOf("n"+"j"))){
                 count--;
+            }else if(String.valueOf(arr[i]+""+arr[i+1]).equals(String.valueOf("d"+"z"))) {
+                count--;
+            }else{
+                count += 0;
             }
+
         }
         System.out.println(count);
     }
