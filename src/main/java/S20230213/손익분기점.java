@@ -15,7 +15,7 @@ public class 손익분기점 {
         int variableCost = Integer.parseInt(st.nextToken());
         int profit = Integer.parseInt(st.nextToken());
 
-        System.out.println(solution(fixCost,variableCost,profit));
+        System.out.print(solution(fixCost,variableCost,profit));
     }
 
 
@@ -24,13 +24,12 @@ public class 손익분기점 {
         while(true){
 
             if((profit-variableCost)*x>fixCost){
-
                 break;
             }else if(profit-variableCost<1){
                 x = -1;
                 break;
             }
-aSxxxsadsaasdaf asd aaSxfsaaad  azaasaaaSDD
+            x++;
         }
 
 
