@@ -1,5 +1,8 @@
 package S20230212;
 
+import java.util.Arrays;
+import java.util.HashSet;
+
 public class 둘만의_암호 {
     public static void main(String[] args) {
         String s = "aukks";
@@ -18,21 +21,22 @@ public class 둘만의_암호 {
             // 그렇지않으면 그냥 index만 더한다.
 
             char ch = (char) ((char) (int)sArr[i]+index);
-
             for (int j = 0; j < index; j++) {
                 sArrLength[i] = (char) ((char) (int) sArr[i] + (j+1));
-                System.out.println(sArrLength[i]);
             }
+            HashSet<Character> hashSet =  new HashSet(Arrays.asList(sArrLength));
 
             for (int j = 0; j < skipArr.length; j++) {
                 count = 0;
                 skipArr[j] = skip.charAt(j);
 
-                if (sArrLength[i] == skipArr[j]) {
-                    count++;
-                    System.out.println((char) ((char) (int)sArr[i]+index+ count));
-                }else{
-                    System.out.println((char) ((char) (int)sArr[i]+index));
+                for (int o = 0; o < sArrLength.length; o++) {
+                    if (sArrLength[o] == skipArr[j]) {
+                        count++;
+                        System.out.println((char) ((char) (int)sArr[i]+index+ count));
+                    }else{
+                        System.out.println((char) ((char) (int)sArr[i]+index));
+                    }
                 }
             }
 
