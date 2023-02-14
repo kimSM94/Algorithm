@@ -6,6 +6,10 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class 손익분기점 {
+
+    /*
+    * 주소 :https://www.acmicpc.net/problem/1712
+    * */
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
