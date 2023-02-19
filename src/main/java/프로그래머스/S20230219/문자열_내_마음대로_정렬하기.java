@@ -12,13 +12,9 @@ public class 문자열_내_마음대로_정렬하기 {
             test[i] = strings[i].charAt(n);
         }
 
-        Arrays.stream(strings).sorted((s1, s2) ->
+        return Arrays.stream(strings).sorted((s1, s2) ->
                 s1.charAt(n) == s2.charAt(n) ? s1.compareTo(s2)
-                              : Integer.compare(s1.charAt(n), s2.charAt(n))).toArray(String[]::new);
-
-
-        String[] answer = {};
-        return answer;
+                        : Integer.compare(s1.charAt(n), s2.charAt(n))).toArray(String[]::new);
 
     }
 
