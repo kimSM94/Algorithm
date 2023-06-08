@@ -9,34 +9,18 @@ public class Main {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        StringTokenizer st = new StringTokenizer(br.readLine()," ");
-
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
         long A = Long.parseLong(st.nextToken());
-
         long B = Long.parseLong(st.nextToken());
 
-        long gcd = (A*B)/GCD(A,B);
-        System.out.println(gcd);
-//        System.out.println("A="+ A);
-//        System.out.println("B="+ B);
-//        System.out.println("A/B ="+A/B);
-//        System.out.println("A%B ="+A%B);
-//        if(B%A==0){
-//            System.out.println(B);
-//        }else{
-//            System.out.println(A * B);
-//        }
+        BigInteger A1 = new BigInteger(String.valueOf(A));
+        BigInteger B1 = new BigInteger(String.valueOf(B));
 
-    }
+        long result = (A * B) / Long.parseLong(String.valueOf(A1.gcd(B1)));
 
-    public static long GCD(long a, long b){
-        while (b>0){
-            long tmp = a;
-            a = b;
-            b = tmp % b;
-        }
-        return a;
+        System.out.println(result);
+
     }
 
 }
