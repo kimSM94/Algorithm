@@ -6,7 +6,7 @@ class Solution {
             if (yellow % i == 0) {
                 answer[0] = yellow / i + 2; //가로가 세로보다 커야 하므로
                 answer[1] = i + 2;
-                if (answer[0] * answer[1] - i * yellow / i == brown)
+                if (answer[0] * answer[1] -  yellow == brown)
                     return (answer);
             }
         }
